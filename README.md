@@ -9,3 +9,6 @@ Python -python tkinter(gui)
 mongodb(compass,atlas)
 sql (mysql connector)
 react js (Frontend under devlopement)
+
+![image](https://github.com/akankshabhagat/Hospitalmock/assets/72538635/3645811d-b95f-49f9-a065-74ef3fcfb7dd)
+

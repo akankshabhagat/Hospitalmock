@@ -19,7 +19,7 @@ def Insert():
     Ward=textlward.get()
     Signed=textlSigned.get()
 
-    myclient=pymongo.MongoClient("mongodb+srv://akankshahospital:adminpatient@hospitaldata.efq8qys.mongodb.net/?retryWrites=true&w=majority")
+    myclient=pymongo.MongoClient("")
     mydb=myclient['hospitalinfo']
     mycollection=mydb['pinfo']
     
@@ -51,7 +51,7 @@ def Update():
     Ward = textlward.get()
     Signed = textlSigned.get()
 
-    con = mysql.connect(host="localhost", user="root", password="admin", database="hospitaldata")
+    con = mysql.connect(host="localhost", user="root", password="*****", database="hospitaldata")
     cursor = con.cursor()
     cursor.execute(
         " update pinfo set patient='" + patient + "',mrdno='" + mrdno+ "' ,consultant='" + consultant + "' ,where no='" + mrdno + "'")
@@ -69,7 +69,7 @@ def fetch():
     Signed = textlSigned.get()
 
 
-    con = mysql.connect(host="localhost", user="root", password="admin", database="hospitaldata")
+    con = mysql.connect(host="localhost", user="root", password="****", database="hospitaldata")
     cursor = con.cursor()
     cursor.execute(
         "select * from pinfo where mrdno='" + mrdno + "' ")
@@ -98,7 +98,7 @@ def Print():
 
 
 
-    con = mysql.connect(host="localhost", user="root", password="admin", database="hospitaldata")
+    con = mysql.connect(host="localhost", user="root", password="*****", database="hospitaldata")
     cursor = con.cursor()
     cursor.execute(
         "select * from pinfo where mrdno='" +mrdno+ "' ")
@@ -117,7 +117,7 @@ def Display_prescription():
     Signed = textlSigned.get()
 
 
-    con = mysql.connect(host="localhost", user="root", password="admin", database="hospitaldata")
+    con = mysql.connect(host="localhost", user="root", password="***", database="hospitaldata")
     cursor = con.cursor()
     cursor.execute(
         "select * from pinfo where no='" + mrdno + "'")
